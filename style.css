@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    color: #333;
+}
+#hero-image{
+    background-image: url(https://images.pexels.com/photos/248515/pexels-photo-248515.png?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+    height: 75vh;
+    background-size: cover;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.center{
+    font-size: 14px;
+    text-align: center;
+    line-height: 50px;
+}
+.read-more{
+    padding: 15px;
+    background-color: #333;
+    color: white;
+    border: 1px solid #666;
+    font-size: 100%;
+}
+
+/* section: web app */
+#web-app{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: #eaeaea;
+    line-height: 30px;
+    padding-bottom: 50px;
+}
+.container{
+    width: 80%;
+}
+.heading{
+    padding: 50px;
+}
+.para{
+    overflow: hidden;
+}
+
+/* Services */
+#services{
+    background-color: #383636;
+    padding: 20px
+}
+.cards{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.card{
+    border-radius: 10px;
+    margin: 1vw;
+    width: 20vw;
+    background-color: white;
+}
+.card img{
+    width:20vw;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px
+    }
+.card h2{
+    margin: 20px 0px
+}
+.card-body{
+    padding: 30px;
+    padding-bottom: 10px;
+    line-height: 02;
+}
+
+/* needs */
+#needs{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10vh;
+}
+#needs h2{
+    padding-top: 10vh;
+    padding-bottom: 5vh;
+}
+#needs p{
+    line-height: 2;
+}
+#contact-and-about{
+    display: flex;
+    justify-content: space-around;
+    color: white;
+}
+.contact, .about{
+    text-align: center;
+}
+.contact,.about{
+    background-color: #2690d4;
+    width: 100%;
+    padding: 50px;
+    line-height: 1.7;
+    font-size: 18px;
+}
+.about{
+    background-color: #333;
+}
+.contact h2, .about h2{
+    padding-bottom: 30px;
+}
+.contact p{
+    padding-bottom: 20px ;
+}
+
+/* footer */
+.footer{
+    background-color: black;
+    color: white;
+    height: 15vh;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.colored{
+    color: #2690d4;
+}
+
+/* for large tablet/small screen PCs */
+@media only screen and (max-width: 1435px) {
+    .card{
+        width: 30vw;
+
+    }
+    .card img{
+        width: 30vw;
+    }
+}
+
+/* for tablets and large screen mobiles*/
+@media only screen and (max-width: 768px) {
+    #contact-and-about{
+        display: unset;
+    }
+    .card{
+        font-size: 11px;
+    }
+    .card-body{
+        line-height: 1.2;
+        padding: 10px;
+    }
+}
+
+/* for extra small devices */
+@media only screen and (max-width: 600px) {
+    .card{
+        font-size: 9px;
+        border-radius: 10px;
+    }
+}
+
